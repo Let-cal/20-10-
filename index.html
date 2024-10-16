@@ -131,9 +131,8 @@
     mail.addEventListener("click", () => {
       window.location.href = "mail.html";
     });
-    window.addEventListener("load", function () {
-      var audio = document.getElementById("myAudio");
-      audio.play();
+    document.body.addEventListener("click", function () {
+      document.getElementById("myAudio").play();
     });
   </script>
 </html>
