@@ -16,7 +16,7 @@
     <title>Gửi em!</title>
   </head>
   <body>
-    <audio autoplay>
+    <audio id="myAudio">
       <source src="Em-Dong-Y-I-Do-Duc-Phuc-911.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
@@ -130,6 +130,10 @@
     var mail = document.querySelector(".mail");
     mail.addEventListener("click", () => {
       window.location.href = "mail.html";
+    });
+    window.addEventListener("load", function () {
+      var audio = document.getElementById("myAudio");
+      audio.play();
     });
   </script>
 </html>
